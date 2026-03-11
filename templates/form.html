@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DCCB Loan Application</title>
+
+    {% load static %}
+<link rel="stylesheet" href="{% static 'css/form.css' %}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="form-box">
+
+            <!-- HEADER -->
+
+            <div class="header">
+
+                <div class="logo-section">
+                    <img src="{% static 'images/dccb_logo.png' %}" class="bank-logo">
+                </div>
+
+                <div class="title-section">
+
+                    <h2>THE DISTRICT CO-OPERATIVE CENTRAL BANK LTD.,</h2>
+
+                    <p class="branch-line">
+                        VIZIANAGARAM (H.O.) ............................ Branch
+                    </p>
+
+                    <p class="subtitle">
+                        AGRI / MT / NFS / HOUSING LOAN APPLICATION
+                    </p>
+
+                </div>
+
+                <div class="photo-section">
+
+                    <div class="photo-box">
+                        <img id="photoPreview" src="">
+                    </div>
+
+                    <p class="photo-label">PHOTO</p>
+
+                    <input type="file" id="photoUpload" accept="image/*">
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p><b>(For Bank Use Only)</b></p>
+
+            <div class="grid-3">
+
+                <div>
+                    <label>Loan Application No & Date</label>
+                    <input>
+                </div>
+
+                <div>
+                    <label>Admission No</label>
+                    <input>
+                </div>
+
+                <div>
+                    <label>Loan No</label>
+                    <input>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="sir-section">
+
+                <p><b>Sir/Madam,</b></p>
+
+                <p class="loan-line">
+
+                    I request that a loan of
+                    <input type="text" class="blank small"> /-
+                    (Rupees
+                    <input type="text" class="blank medium">
+                    only)
+
+                    may kindly be sanctioned to me for the purpose of
+                    <input type="text" class="blank large">
+                    (Purpose).
+
+                </p>
+
+            </div>
+
+            <div class="section-title">Upload Applicant Documents</div>
+
+            <table>
+
+                <tr>
+                    <th>Document</th>
+                    <th>Upload</th>
+                </tr>
+
+                <tr>
+                    <td>Pattadar Passbook</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Title Deed</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>₹1 Stamp Paper</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Affidavit</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Income Certificate</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Bio-Metric Passbook</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Sale Deed</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Gas / Electricity Bill</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Ration Card</td>
+                    <td><input type="file"></td>
+                </tr>
+
+            </table>
+
+            <div class="section-title">GENERAL INFORMATION</div>
+
+            <div class="grid-2">
+
+                <div>
+                    <label>Applicant Name</label>
+                    <input>
+                </div>
+
+                <div>
+                    <label>Father / Husband Name</label>
+                    <input>
+                </div>
+
+                <div>
+                    <label>Date of Birth</label>
+                    <input type="date">
+                </div>
+
+                <div>
+                    <label>Age</label>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <label>Farmer Category</label>
+                    <select name="farmerCategory">
+                        <option value="">-- Select --</option>
+                        <option value="SF">SF (Small Farmer)</option>
+                        <option value="MF">MF (Marginal Farmer)</option>
+                        <option value="BF">BF (Big Farmer)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Category</label>
+                    <select>
+                        <option>SC</option>
+                        <option>ST</option>
+                        <option>BC</option>
+                        <option>OC</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <label>Present Address</label>
+            <textarea></textarea>
+
+            <label>Permanent Address</label>
+            <textarea></textarea>
+
+            <label>Village where Agricultural Land is Situated</label>
+            <input>
+
+            <label>Aadhaar Card Number</label>
+            <input>
+
+            <label>Name of the Bank Account</label>
+            <input>
+
+            <div class="section-title">Family Members in Household</div>
+
+            <div class="grid-3">
+
+                <div>
+                    <label>Adults</label>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <label>Children</label>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <label>Total</label>
+                    <input type="number">
+                </div>
+
+            </div>
+
+            <div class="section-title">Land Details of the Applicant</div>
+
+            <table>
+
+                <tr>
+                    <th colspan="2">Total Area (Acres)</th>
+                    <th>Village where Hypothecated Lands are Located</th>
+                    <th colspan="2">Area of Mortgaged Lands</th>
+                    <th>Purpose</th>
+                    <th>Total Investment ₹</th>
+                    <th>Loan Requested ₹</th>
+                </tr>
+
+                <tr>
+                    <th>Wet</th>
+                    <th>Dry</th>
+                    <th></th>
+                    <th>Wet</th>
+                    <th>Dry</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+
+                <tr>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+
+            </table>
+
+            <div class="section-title">Declaration</div>
+
+            <div class="declaration-box">
+
+                <p>1. I hereby declare that the details furnished by me in this application are true and correct.</p>
+                <p>2. I undertake to submit all necessary documents required by the bank.</p>
+                <p>3. I confirm the information provided is correct to the best of my knowledge.</p>
+                <p>4. I agree to follow the rules and regulations of the bank.</p>
+                <p>5. I undertake to repay the loan within the prescribed time.</p>
+
+            </div>
+
+            <div class="checkbox-container">
+
+                <input type="checkbox" id="agree">
+
+                <label for="agree">I agree to the above declaration</label>
+
+            </div>
+
+            <br>
+
+            <div class="grid-2">
+
+                <div>
+                    <label>Signature of Applicant</label>
+                    <input>
+                </div>
+
+                <div>
+                    <label>Date</label>
+                    <input type="date">
+                </div>
+
+            </div>
+
+            <br>
+
+            <button id="submitBtn" disabled>Submit Application</button>
+
+        </div>
+    </div>
+
+    <script>
+
+        /* Declaration checkbox */
+
+        const checkbox = document.getElementById("agree");
+        const submitBtn = document.getElementById("submitBtn");
+
+        checkbox.addEventListener("change", function () {
+            submitBtn.disabled = !this.checked;
+        });
+
+        /* Photo preview */
+
+        const photoUpload = document.getElementById("photoUpload");
+        const photoPreview = document.getElementById("photoPreview");
+
+        photoUpload.addEventListener("change", function () {
+
+            const file = this.files[0];
+
+            if (file) {
+
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    photoPreview.src = e.target.result;
+                }
+
+                reader.readAsDataURL(file);
+
+            }
+
+        });
+
+        /* Auto-resize .blank inputs */
+
+        /* Hidden ghost span used to measure text pixel width */
+        const ghost = document.createElement("span");
+        ghost.style.cssText =
+            "position:absolute;visibility:hidden;white-space:pre;" +
+            "font-size:14px;font-family:'Segoe UI',Arial,sans-serif;" +
+            "padding:2px 4px;letter-spacing:normal;";
+        document.body.appendChild(ghost);
+
+        function resizeBlank(input) {
+
+            /* Read the minimum width defined by .small / .medium / .large */
+            const minWidth = parseInt(window.getComputedStyle(input).width) || 80;
+
+            ghost.textContent = input.value || "";
+            const textWidth = ghost.offsetWidth;
+
+            /* Keep the minimum width, grow when text is wider */
+            input.style.width = Math.max(minWidth, textWidth + 16) + "px";
+        }
+
+        document.querySelectorAll("input.blank").forEach(function (input) {
+
+            /* Set initial size */
+            resizeBlank(input);
+
+            /* Resize on every keystroke */
+            input.addEventListener("input", function () {
+                resizeBlank(this);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

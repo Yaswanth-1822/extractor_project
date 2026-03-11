@@ -1,0 +1,351 @@
+/* PAGE BACKGROUND */
+
+body{
+background:#f2f5f9;
+font-family:"Segoe UI", Arial, sans-serif;
+font-size:14px;
+margin:0;
+padding:0;
+color:#2d2d2d;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+max-width:1050px;
+margin:40px auto;
+}
+
+/* FORM BOX */
+
+.form-box{
+background:#ffffff;
+padding:40px;
+border-radius:6px;
+box-shadow:0px 4px 14px rgba(0,0,0,0.08);
+border:1px solid #dfe3e8;
+}
+
+/* HEADER */
+
+.header{
+display:grid;
+grid-template-columns:160px 1fr 160px;
+align-items:center;
+margin-bottom:20px;
+padding-bottom:15px;
+border-bottom:3px solid #2c6ed5;
+}
+
+.logo-section{
+text-align:center;
+}
+
+.bank-logo{
+width:130px;
+}
+
+.title-section{
+text-align:center;
+}
+
+.title-section h2{
+margin:0;
+font-size:22px;
+font-weight:700;
+letter-spacing:0.5px;
+color:#1f3c6e;
+}
+
+.branch-line{
+margin:6px 0;
+font-size:14px;
+font-weight:500;
+color:#555;
+}
+
+.subtitle{
+margin-top:5px;
+font-size:15px;
+font-weight:600;
+color:#2c6ed5;
+}
+
+/* PHOTO */
+
+.photo-section{
+text-align:center;
+}
+
+.photo-box{
+width:130px;
+height:150px;
+border:2px solid #2c6ed5;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#f9fbff;
+overflow:hidden;
+}
+
+.photo-box img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.photo-label{
+font-size:12px;
+margin-top:5px;
+font-weight:600;
+color:#555;
+}
+
+/* SECTION TITLES */
+
+.section-title{
+font-weight:700;
+margin-top:35px;
+border-left:5px solid #2c6ed5;
+padding-left:10px;
+margin-bottom:18px;
+font-size:16px;
+color:#1f3c6e;
+}
+
+/* HR */
+
+hr{
+margin:20px 0;
+border:none;
+border-top:1px solid #e0e6ed;
+}
+
+/* LABELS */
+
+label{
+display:block;
+margin-bottom:6px;
+font-weight:600;
+color:#374151;
+}
+
+/* INPUT FIELDS */
+
+input, textarea, select{
+width:100%;
+padding:9px;
+border:1px solid #d1d5db;
+border-radius:4px;
+box-sizing:border-box;
+margin-bottom:12px;
+font-size:14px;
+transition:all 0.2s ease;
+background:#ffffff;
+}
+
+/* INPUT FOCUS */
+
+input:focus,
+textarea:focus,
+select:focus{
+outline:none;
+border-color:#2c6ed5;
+box-shadow:0 0 4px rgba(44,110,213,0.25);
+}
+
+/* TEXTAREA */
+
+textarea{
+resize:vertical;
+}
+
+/* GRID */
+
+.grid-3{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:18px;
+}
+
+.grid-2{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+font-size:13px;
+}
+
+table, th, td{
+border:1px solid #d6dce3;
+}
+
+th{
+background:#eef3fb;
+font-weight:600;
+text-align:center;
+color:#1f3c6e;
+}
+
+td{
+padding:8px;
+background:#ffffff;
+}
+
+td input{
+margin-bottom:0;
+}
+
+/* DECLARATION BOX */
+
+.declaration-box{
+border:1px solid #d6dce3;
+padding:15px;
+background:#f9fbff;
+max-height:220px;
+overflow-y:auto;
+line-height:1.6;
+font-size:13px;
+}
+
+/* RADIO GROUP */
+
+.radio-group{
+display:flex;
+gap:20px;
+align-items:center;
+margin-bottom:12px;
+}
+
+.radio-label{
+display:flex;
+align-items:center;
+gap:6px;
+font-weight:600;
+color:#374151;
+cursor:pointer;
+margin-bottom:0;
+}
+
+.radio-label input[type="radio"]{
+width:auto;
+margin-bottom:0;
+cursor:pointer;
+}
+
+/* CHECKBOX */
+
+.checkbox-container{
+margin-top:15px;
+display:flex;
+align-items:center;
+justify-content:flex-start;
+gap:10px;
+font-size:13px;
+}
+
+.checkbox-container input[type="checkbox"]{
+width:auto;
+margin-bottom:0;
+flex-shrink:0;
+}
+
+.checkbox-container label{
+display:inline;
+margin-bottom:0;
+}
+
+/* BUTTON */
+
+button{
+background:#2c6ed5;
+color:white;
+border:none;
+padding:13px;
+width:100%;
+font-size:15px;
+border-radius:5px;
+cursor:pointer;
+transition:all 0.2s;
+font-weight:600;
+}
+
+button:hover{
+background:#1f57a9;
+}
+
+button:disabled{
+background:#9ca3af;
+cursor:not-allowed;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+.header{
+grid-template-columns:1fr;
+text-align:center;
+gap:15px;
+}
+
+.grid-3{
+grid-template-columns:1fr;
+}
+
+.grid-2{
+grid-template-columns:1fr;
+}
+
+.photo-section{
+margin:auto;
+}
+
+}
+
+/* SIR SECTION */
+
+.sir-section{
+margin-top:20px;
+margin-bottom:25px;
+font-size:15px;
+line-height:2.2;
+}
+
+.loan-line{
+line-height:2.4;
+}
+
+/* BLANK INLINE INPUT */
+
+.blank{
+border:none;
+border-bottom:1px dotted #444;
+outline:none;
+background:transparent;
+padding:2px 4px;
+font-size:14px;
+margin:0 4px;
+}
+
+/* WIDTHS */
+
+.small{
+width:120px;
+}
+
+.medium{
+width:220px;
+}
+
+.large{
+width:300px;
+}
